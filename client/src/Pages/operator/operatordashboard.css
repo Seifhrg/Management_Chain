@@ -1,0 +1,27 @@
+.butto {
+  background-color: rgb(39, 38, 38);
+  color: white;
+  border: 2px solid #958989;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.butto:hover {
+  background-color: #706868;
+  color: white;
+}
+.center {
+  margin-top: 30px;
+  padding-top: 46px;
+  padding-bottom: 30px;
+  position: absolute;
+
+  left: 60%;
+
+  transform: translate(-50%, -50%);
+}

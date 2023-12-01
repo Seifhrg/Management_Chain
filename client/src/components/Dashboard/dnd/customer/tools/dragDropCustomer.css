@@ -1,0 +1,45 @@
+.listt {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  height: 593px;
+  width: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  float: left;
+  font-style: italic;
+  background-color: rgb(146, 173, 175);
+}
+.dndd {
+  padding-top: 90px;
+}
+.component-item {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+}
+
+.removee:hover {
+  background-color: red;
+  color: black;
+}
+
+.removee {
+  color: red;
+  margin-left: 45px;
+  width: 10px;
+  height: 13px;
+  font-size: xx-small;
+  font-weight: bold;
+}
+
+.boardd {
+  width: 1500px;
+  height: 750px;
+  border: 2.5px solid black;
+
+  margin-bottom: 20px;
+  margin-left: 200px;
+  background-color: rgb(236, 232, 232);
+}

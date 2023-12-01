@@ -1,0 +1,42 @@
+.list {
+  padding-top: 120px;
+
+  height: 631px;
+  width: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  float: left;
+  font-style: italic;
+  background-color: rgb(146, 173, 175);
+}
+.dnd {
+  padding-top: 90px;
+}
+.component-item {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+}
+.remove {
+  color: red;
+  margin-left: 45px;
+  width: 10px;
+  height: 13px;
+  font-size: xx-small;
+  font-weight: bold;
+}
+.remove:hover {
+  background-color: red;
+  color: black;
+}
+.board {
+  width: 1500px;
+  height: 750px;
+  border: 2.5px solid black;
+
+  margin-bottom: 20px;
+  margin-left: 200px;
+  background-color: rgb(236, 232, 232);
+}
