@@ -1,0 +1,28 @@
+const mongoose = require("mongoose");
+
+const sfcNodeSchema = mongoose.Schema(
+  {
+    type: { type: String, required: true },
+    nodeKey: { type: String, required: true }, // the id same as the label
+    data: {
+      label: { type: String, required: true },
+      extData: {
+        expectedProcessingTime: { type: String },
+        packetPerSecond: { type: String },
+      },
+    },
+
+    position: {
+      x: { type: Number, required: true },
+      y: { type: Number, required: true },
+    },
+    sfc: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: "sfc",
+    },
+  },
+  { timestamps: true }
+);
+
+module.exports = mongoose.model("sfcNode", sfcNodeSchema);

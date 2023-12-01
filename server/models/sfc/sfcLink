@@ -1,0 +1,20 @@
+const mongoose = require("mongoose");
+
+const sfcLinkSchema = mongoose.Schema(
+  {
+    source: { type: String, required: true }, /// same as the label of the node for exemple Host_0
+    target: { type: String, required: true },
+    linkKey: { type: String, required: true }, /// the id
+    extData: {
+      debit: { type: Number, required: true },
+      propagationDelay: { type: Number, required: true },
+    },
+    sfc: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: "sfc",
+    },
+  },
+  { timestamps: true }
+);
+module.exports = mongoose.model("sfcLink", sfcLinkSchema);
